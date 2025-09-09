@@ -19,36 +19,6 @@ const PortfolioSection = () => {
         live: "#",
         github: "#"
       }
-    },
-    {
-      title: "AI-Powered Analytics Dashboard",
-      client: "DataCorp Solutions",
-      category: "Dashboard",
-      description: "Real-time analytics platform with machine learning insights for business intelligence and predictive analytics.",
-      problem: "Manual data analysis was taking weeks to complete",
-      solution: "Automated workflows with Python ML models and React frontend",
-      result: "95% reduction in analysis time, $2M cost savings",
-      technologies: ["React", "Python", "TensorFlow", "PostgreSQL", "Docker"],
-      image: "gradient-hero",
-      links: {
-        live: "#",
-        github: "#"
-      }
-    },
-    {   
-      title: "Mobile-First SaaS Platform",
-      client: "StartupX",
-      category: "SaaS Application",
-      description: "Cross-platform mobile application with real-time collaboration features and offline capabilities.",
-      problem: "Remote teams needed better collaboration tools",
-      solution: "React Native app with WebSocket real-time features",
-      result: "150% increase in team productivity, 4.8/5 app store rating",
-      technologies: ["React Native", "WebSocket", "MongoDB", "AWS", "TypeScript"],
-      image: "gradient-subtle",
-      links: {
-        live: "#",
-        github: "#"
-      }
     }
   ];
 
