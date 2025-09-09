@@ -3,14 +3,14 @@ import { CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    "Frontend Development",
-    "Backend Architecture", 
-    "UI/UX Design",
-    "Database Design",
-    "API Development",
-    "Performance Optimization",
-    "Team Leadership",
-    "Project Management"
+    "Portfolio Design",
+    "Content Strategy", 
+    "SEO Optimization",
+    "Personal Branding",
+    "User Experience",
+    "Visual Storytelling",
+    "Conversion Optimization",
+    "Professional Photography"
   ];
 
   return (
@@ -20,25 +20,25 @@ const AboutSection = () => {
           {/* Content */}
           <div className="animate-fade-up">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              About <span className="text-gradient">Me</span>
+              About <span className="text-gradient">Us</span>
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate <strong className="text-foreground">Full-Stack Developer</strong> with over 5 years of experience 
-                crafting digital solutions that make a real difference. My journey began with a curiosity 
-                about how things work and evolved into a mission to build technology that empowers people.
+                We're a specialized <strong className="text-foreground">Portfolio Creation Agency</strong> with over 3 years of experience 
+                helping professionals showcase their work in the most compelling way. Our mission is to transform 
+                your achievements into powerful digital portfolios that open doors.
               </p>
               
               <p>
-                What sets me apart is my unique blend of technical expertise and business acumen. 
-                I don't just write code—I solve problems, optimize processes, and create experiences 
-                that users love and businesses depend on.
+                What sets us apart is our deep understanding of what employers and clients look for. 
+                We don't just build websites—we craft strategic narratives, optimize for conversions, 
+                and create experiences that leave lasting impressions on your target audience.
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring new technologies, mentoring upcoming developers, 
-                or working on open-source projects that give back to the community.
+                From designers and developers to consultants and entrepreneurs, we've helped hundreds of 
+                professionals land their dream jobs and attract high-value clients through exceptional portfolios.
               </p>
             </div>
 
@@ -61,10 +61,10 @@ const AboutSection = () => {
             {/* Key Points */}
             <div className="mt-8 space-y-3">
               {[
-                "5+ years of professional development experience",
-                "Led teams of 3-8 developers on complex projects", 
-                "Delivered 50+ successful projects across various industries",
-                "Strong focus on performance, scalability, and user experience"
+                "3+ years specializing in portfolio creation",
+                "200+ successful portfolios delivered across industries", 
+                "99% client satisfaction rate with measurable results",
+                "Expert in personal branding and professional storytelling"
               ].map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -84,8 +84,8 @@ const AboutSection = () => {
                     <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                       <div className="w-12 h-12 bg-primary/40 rounded-full"></div>
                     </div>
-                    <p className="text-sm font-medium">Professional Photo</p>
-                    <p className="text-xs mt-1">Upload your photo here</p>
+                    <p className="text-sm font-medium">Our Team</p>
+                    <p className="text-xs mt-1">Portfolio experts ready to help</p>
                   </div>
                 </div>
               </div>

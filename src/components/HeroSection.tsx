@@ -21,22 +21,21 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 animate-fade-in">
             <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-            Available for new opportunities
+            Professional Portfolio Creation
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 animate-fade-up">
-            Turning{" "}
-            <span className="text-gradient">Skills</span>{" "}
-            into{" "}
-            <span className="text-gradient">Impact</span>
+            Build Your{" "}
+            <span className="text-gradient">Perfect</span>{" "}
+            <span className="text-gradient">Portfolio</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-up">
-            I help <strong>innovative companies</strong> achieve{" "}
-            <strong>exceptional results</strong> through{" "}
-            <strong>cutting-edge development</strong> and strategic problem-solving.
+            We help <strong>professionals and businesses</strong> create{" "}
+            <strong>stunning portfolio websites</strong> that showcase their work and{" "}
+            <strong>attract new opportunities</strong>.
           </p>
 
           {/* CTA Buttons */}
@@ -46,7 +45,7 @@ const HeroSection = () => {
               size="hero"
               className="group"
             >
-              View Portfolio
+              View Our Work
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -56,23 +55,23 @@ const HeroSection = () => {
               className="group"
             >
               <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Work With Me
+              Get Started
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50">
             <div className="text-center animate-fade-in">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">Projects Completed</div>
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">200+</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Portfolios Created</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">98%</div>
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">99%</div>
               <div className="text-sm text-muted-foreground uppercase tracking-wider">Client Satisfaction</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">5+</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</div>
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">3+</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Years in Business</div>
             </div>
           </div>
         </div>

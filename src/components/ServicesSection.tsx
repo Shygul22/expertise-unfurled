@@ -15,75 +15,75 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code2,
-      title: "Full-Stack Development",
-      description: "End-to-end web application development using modern technologies and best practices.",
+      title: "Portfolio Website Design",
+      description: "Custom-designed portfolio websites that showcase your work and personal brand professionally.",
       features: [
-        "React/Next.js Frontend",
-        "Node.js/Python Backend", 
-        "Database Design & Optimization",
-        "API Development & Integration"
+        "Modern Responsive Design",
+        "Custom Branding & Colors", 
+        "Mobile-First Approach",
+        "Fast Loading & SEO Optimized"
       ],
-      price: "Starting at $5,000"
+      price: "Starting at $1,500"
     },
     {
       icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Cross-platform mobile applications that deliver native performance and user experience.",
+      title: "Content Strategy & Writing",
+      description: "Professional content creation that tells your story and highlights your achievements effectively.",
       features: [
-        "React Native Development",
-        "iOS & Android Compatible",
-        "Real-time Features",
-        "App Store Deployment"
+        "Professional Bio Writing",
+        "Project Case Studies",
+        "Achievement Highlighting",
+        "SEO Content Optimization"
       ],
-      price: "Starting at $8,000"
+      price: "Starting at $800"
     },
     {
       icon: Database,
-      title: "System Architecture",
-      description: "Scalable system design and architecture consulting for enterprise-level applications.",
+      title: "Personal Branding Package",
+      description: "Complete personal branding solution including logo, color palette, and brand guidelines.",
       features: [
-        "Microservices Architecture",
-        "Cloud Infrastructure Setup",
-        "Performance Optimization",
-        "Security Best Practices"
+        "Logo & Brand Identity",
+        "Color Palette Selection",
+        "Typography Guidelines",
+        "Brand Style Guide"
       ],
-      price: "Starting at $3,000"
+      price: "Starting at $1,200"
     },
     {
       icon: Zap,
-      title: "Performance Optimization",
-      description: "Speed up your existing applications and improve user experience significantly.",
+      title: "Portfolio Optimization",
+      description: "Improve your existing portfolio's performance, SEO, and conversion rates significantly.",
       features: [
-        "Code Audit & Refactoring",
-        "Database Optimization",
-        "Caching Strategies",
-        "Load Testing & Monitoring"
+        "Performance Optimization",
+        "SEO Improvements",
+        "User Experience Audit",
+        "Conversion Rate Optimization"
       ],
-      price: "Starting at $2,500"
+      price: "Starting at $600"
     },
     {
       icon: Users,
-      title: "Team Leadership",
-      description: "Technical leadership and mentorship for development teams and complex projects.",
+      title: "Professional Photography",
+      description: "High-quality professional photos and portfolio image curation for maximum impact.",
       features: [
-        "Technical Team Management",
-        "Code Review & Standards",
-        "Developer Mentoring",
-        "Project Planning & Execution"
+        "Professional Headshots",
+        "Work Environment Photos",
+        "Project Documentation",
+        "Image Editing & Retouching"
       ],
-      price: "Starting at $4,000"
+      price: "Starting at $400"
     },
     {
       icon: Lightbulb,
-      title: "Technical Consulting",
-      description: "Strategic technology advice and solution architecture for your business needs.",
+      title: "Career Coaching",
+      description: "Strategic career guidance and portfolio positioning to help you land your dream opportunities.",
       features: [
-        "Technology Stack Selection",
-        "Project Feasibility Analysis",
-        "Technical Due Diligence",
-        "Digital Transformation Strategy"
+        "Portfolio Strategy Session",
+        "Industry-Specific Guidance",
+        "Interview Preparation",
+        "Career Goal Planning"
       ],
-      price: "Starting at $1,500"
+      price: "Starting at $300"
     }
   ];
 
@@ -93,11 +93,11 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Services & <span className="text-gradient">Solutions</span>
+            Our <span className="text-gradient">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive development services to help your business thrive in the digital landscape.
-            From concept to deployment, I've got you covered.
+            Complete portfolio creation services to help you stand out and attract the right opportunities.
+            From design to deployment, we handle everything for you.
           </p>
         </div>
 
@@ -147,19 +147,19 @@ const ServicesSection = () => {
         {/* CTA Section */}
         <div className="text-center bg-gradient-subtle rounded-2xl p-12 animate-fade-up">
           <h3 className="text-3xl font-bold mb-4">
-            Ready to Start Your Project?
+            Ready to Build Your Portfolio?
           </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's discuss your requirements and create a custom solution that drives results.
-            Book a free consultation to get started.
+            Let's create a stunning portfolio that showcases your work and opens new doors.
+            Book a free consultation to discuss your vision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="group">
-              Book Free Consultation
+              Start Your Portfolio
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline-primary" size="lg">
-              View Pricing Details
+              View Package Details
             </Button>
           </div>
         </div>

@@ -6,14 +6,14 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      client: "TechStart Inc.",
-      category: "Web Application",
-      description: "Full-stack e-commerce solution with advanced inventory management, payment processing, and analytics dashboard.",
-      problem: "Client needed a scalable platform to handle 10k+ daily orders",
-      solution: "Built with React, Node.js, and PostgreSQL with Redis caching",
-      result: "300% increase in conversion rates, 99.9% uptime",
-      technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
+      title: "Creative Designer Portfolio",
+      client: "Sarah Chen - UX Designer",
+      category: "Design Portfolio",
+      description: "Modern portfolio showcasing UI/UX design projects with interactive case studies and detailed design process documentation.",
+      problem: "Client had amazing work but no professional way to showcase it to potential employers",
+      solution: "Built clean, modern portfolio with case study format and interactive prototypes",
+      result: "Landed senior UX role at tech startup within 2 months, 40% salary increase",
+      technologies: ["Portfolio Design", "Case Studies", "Interactive Prototypes", "SEO", "Personal Branding"],
       image: "gradient-primary",
       links: {
         live: "#",
@@ -28,11 +28,11 @@ const PortfolioSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Featured <span className="text-gradient">Projects</span>
+            Client <span className="text-gradient">Success Stories</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore some of my recent work where I've helped businesses solve complex challenges 
-            and achieve remarkable results through innovative solutions.
+            See how we've helped professionals transform their careers through stunning portfolios 
+            that showcase their work and attract new opportunities.
           </p>
         </div>
 
@@ -97,11 +97,11 @@ const PortfolioSection = () => {
                     <div className="flex gap-3">
                       <Button variant="default" size="sm" className="group">
                         <ExternalLink className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                        Live Demo
+                        View Portfolio
                       </Button>
                       <Button variant="outline" size="sm" className="group">
                         <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
-                        Code
+                        Case Study
                       </Button>
                     </div>
                   </div>
@@ -114,10 +114,10 @@ const PortfolioSection = () => {
         {/* CTA Section */}
         <div className="text-center mt-16 animate-fade-up">
           <p className="text-lg text-muted-foreground mb-6">
-            Want to see more of my work or discuss your project?
+            Ready to create your own success story with a stunning portfolio?
           </p>
           <Button variant="hero" size="lg" className="group">
-            View All Projects
+            Start Your Portfolio Project
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
