@@ -23,26 +23,26 @@ const Footer = () => {
           {/* Brand & Contact */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">
-              Let's Create Something Amazing
+              Transform Your Career with Zypher
             </h3>
             <p className="text-background/80 mb-6 leading-relaxed">
-              Ready to turn your ideas into reality? I'm here to help you build innovative 
-              solutions that make a difference. Get in touch and let's start your next project.
+              Ready to take your career to the next level? We're here to help you create 
+              compelling resumes, stunning portfolios, and strategic career plans that open doors.
             </p>
             
             {/* Quick Contact */}
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>hello@yourname.com</span>
+                <span>zypher@zenjourney.in</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9488742416</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Kovilpalayam, Coimbatore</span>
               </div>
             </div>
 
@@ -119,9 +119,9 @@ const Footer = () => {
       <div className="section-container py-6">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-background/80">
           <div className="flex items-center gap-2">
-            <span>© {currentYear} Portfolio. Made with</span>
+            <span>© {currentYear} Zypher. Made with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
-            <span>by Your Name</span>
+            <span>for your career success</span>
           </div>
           
           <div className="flex gap-6">

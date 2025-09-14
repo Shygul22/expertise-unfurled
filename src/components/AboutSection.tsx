@@ -3,14 +3,14 @@ import { CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    "Portfolio Design",
-    "Content Strategy", 
-    "SEO Optimization",
+    "Resume Writing",
+    "Portfolio Creation", 
+    "Career Consultation",
+    "ATS Optimization",
     "Personal Branding",
-    "User Experience",
-    "Visual Storytelling",
-    "Conversion Optimization",
-    "Professional Photography"
+    "Interview Preparation",
+    "Career Strategy",
+    "Professional Writing"
   ];
 
   return (
@@ -20,25 +20,25 @@ const AboutSection = () => {
           {/* Content */}
           <div className="animate-fade-up">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              About <span className="text-gradient">Us</span>
+              About <span className="text-gradient">Zypher</span>
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                We're a specialized <strong className="text-foreground">Portfolio Creation Agency</strong> with over 3 years of experience 
-                helping professionals showcase their work in the most compelling way. Our mission is to transform 
-                your achievements into powerful digital portfolios that open doors.
+                We're <strong className="text-foreground">Zypher</strong> - your career success partner with expertise in 
+                resume writing, portfolio creation, and career consultation. Our mission is to help 
+                professionals showcase their potential and land their dream opportunities.
               </p>
               
               <p>
-                What sets us apart is our deep understanding of what employers and clients look for. 
-                We don't just build websites—we craft strategic narratives, optimize for conversions, 
-                and create experiences that leave lasting impressions on your target audience.
+                What sets us apart is our deep understanding of what employers look for. 
+                We don't just write resumes or build portfolios—we craft strategic career narratives, 
+                optimize for ATS systems, and create compelling professional stories.
               </p>
               
               <p>
-                From designers and developers to consultants and entrepreneurs, we've helped hundreds of 
-                professionals land their dream jobs and attract high-value clients through exceptional portfolios.
+                From fresh graduates to seasoned professionals, we've helped hundreds of 
+                individuals transform their careers through expertly crafted resumes and stunning portfolios.
               </p>
             </div>
 
@@ -61,10 +61,10 @@ const AboutSection = () => {
             {/* Key Points */}
             <div className="mt-8 space-y-3">
               {[
-                "3+ years specializing in portfolio creation",
-                "200+ successful portfolios delivered across industries", 
-                "99% client satisfaction rate with measurable results",
-                "Expert in personal branding and professional storytelling"
+                "Specialized in resume writing and portfolio creation",
+                "200+ successful career transformations delivered", 
+                "99% client satisfaction with measurable results",
+                "Expert in career strategy and professional branding"
               ].map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />

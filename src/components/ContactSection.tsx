@@ -48,7 +48,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-sm text-muted-foreground">hello@yourname.com</p>
+                  <p className="text-sm text-muted-foreground">zypher@zenjourney.in</p>
                 </div>
               </div>
 
@@ -58,7 +58,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-sm text-muted-foreground">+91 9488742416</p>
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-sm text-muted-foreground">Kovilpalayam, Coimbatore</p>
                 </div>
               </div>
 
@@ -152,11 +152,11 @@ const ContactSection = () => {
                       id="projectType"
                       className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
                     >
-                      <option value="">Select project type</option>
-                      <option value="web-development">Web Development</option>
-                      <option value="mobile-app">Mobile App</option>
-                      <option value="consulting">Technical Consulting</option>
-                      <option value="optimization">Performance Optimization</option>
+                      <option value="">Select service type</option>
+                      <option value="resume-writing">Resume Writing</option>
+                      <option value="portfolio-creation">Portfolio Creation</option>
+                      <option value="career-consultation">Career Consultation</option>
+                      <option value="combo-package">Combo Package</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
@@ -168,10 +168,10 @@ const ContactSection = () => {
                       className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
                     >
                       <option value="">Select budget range</option>
-                      <option value="5k-10k">$5K - $10K</option>
-                      <option value="10k-25k">$10K - $25K</option>
-                      <option value="25k-50k">$25K - $50K</option>
-                      <option value="50k+">$50K+</option>
+                      <option value="2k-5k">₹2K - ₹5K</option>
+                      <option value="5k-15k">₹5K - ₹15K</option>
+                      <option value="15k-30k">₹15K - ₹30K</option>
+                      <option value="30k+">₹30K+</option>
                     </select>
                   </div>
 

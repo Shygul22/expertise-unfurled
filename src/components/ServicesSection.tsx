@@ -15,75 +15,39 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code2,
-      title: "Portfolio Website Design",
-      description: "Custom-designed portfolio websites that showcase your work and personal brand professionally.",
+      title: "Resume Writing",
+      description: "Professional resume writing services that highlight your skills and achievements effectively.",
       features: [
-        "Modern Responsive Design",
-        "Custom Branding & Colors", 
-        "Mobile-First Approach",
-        "Fast Loading & SEO Optimized"
+        "ATS-Optimized Format",
+        "Industry-Specific Keywords", 
+        "Achievement Highlighting",
+        "Professional Language & Tone"
       ],
-      price: "Starting at $1,500"
+      price: "Starting at ₹2,500"
     },
     {
       icon: Smartphone,
-      title: "Content Strategy & Writing",
-      description: "Professional content creation that tells your story and highlights your achievements effectively.",
+      title: "Portfolio Creation",
+      description: "Custom-designed portfolio websites that showcase your work and personal brand professionally.",
       features: [
-        "Professional Bio Writing",
-        "Project Case Studies",
-        "Achievement Highlighting",
-        "SEO Content Optimization"
+        "Modern Responsive Design",
+        "Custom Branding & Colors",
+        "Mobile-First Approach",
+        "Fast Loading & SEO Optimized"
       ],
-      price: "Starting at $800"
-    },
-    {
-      icon: Database,
-      title: "Personal Branding Package",
-      description: "Complete personal branding solution including logo, color palette, and brand guidelines.",
-      features: [
-        "Logo & Brand Identity",
-        "Color Palette Selection",
-        "Typography Guidelines",
-        "Brand Style Guide"
-      ],
-      price: "Starting at $1,200"
-    },
-    {
-      icon: Zap,
-      title: "Portfolio Optimization",
-      description: "Improve your existing portfolio's performance, SEO, and conversion rates significantly.",
-      features: [
-        "Performance Optimization",
-        "SEO Improvements",
-        "User Experience Audit",
-        "Conversion Rate Optimization"
-      ],
-      price: "Starting at $600"
+      price: "Starting at ₹15,000"
     },
     {
       icon: Users,
-      title: "Professional Photography",
-      description: "High-quality professional photos and portfolio image curation for maximum impact.",
+      title: "Career Consultation",
+      description: "Strategic career guidance and personalized coaching to help you achieve your professional goals.",
       features: [
-        "Professional Headshots",
-        "Work Environment Photos",
-        "Project Documentation",
-        "Image Editing & Retouching"
-      ],
-      price: "Starting at $400"
-    },
-    {
-      icon: Lightbulb,
-      title: "Career Coaching",
-      description: "Strategic career guidance and portfolio positioning to help you land your dream opportunities.",
-      features: [
-        "Portfolio Strategy Session",
-        "Industry-Specific Guidance",
+        "One-on-One Consultation",
+        "Career Path Planning",
         "Interview Preparation",
-        "Career Goal Planning"
+        "Industry Insights & Trends"
       ],
-      price: "Starting at $300"
+      price: "Starting at ₹3,000"
     }
   ];
 

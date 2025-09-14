@@ -26,16 +26,16 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 animate-fade-up">
-            Build Your{" "}
-            <span className="text-gradient">Perfect</span>{" "}
-            <span className="text-gradient">Portfolio</span>
+            <span className="text-gradient">Zypher</span> - Your{" "}
+            <span className="text-gradient">Career Success</span>{" "}
+            Partner
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-up">
-            We help <strong>professionals and businesses</strong> create{" "}
-            <strong>stunning portfolio websites</strong> that showcase their work and{" "}
-            <strong>attract new opportunities</strong>.
+            We help <strong>professionals</strong> create{" "}
+            <strong>stunning portfolios, resumes, and career strategies</strong> that{" "}
+            <strong>attract dream opportunities</strong>.
           </p>
 
           {/* CTA Buttons */}
