@@ -14,6 +14,100 @@ export type Database = {
   }
   public: {
     Tables: {
+      admin_reports: {
+        Row: {
+          created_at: string
+          generated_by: string | null
+          id: string
+          report_data: Json | null
+          report_type: string
+        }
+        Insert: {
+          created_at?: string
+          generated_by?: string | null
+          id?: string
+          report_data?: Json | null
+          report_type: string
+        }
+        Update: {
+          created_at?: string
+          generated_by?: string | null
+          id?: string
+          report_data?: Json | null
+          report_type?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "admin_reports_generated_by_fkey"
+            columns: ["generated_by"]
+            isOneToOne: false
+            referencedRelation: "admin_users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      admin_sessions: {
+        Row: {
+          admin_id: string
+          created_at: string
+          expires_at: string
+          id: string
+          session_token: string
+        }
+        Insert: {
+          admin_id: string
+          created_at?: string
+          expires_at: string
+          id?: string
+          session_token: string
+        }
+        Update: {
+          admin_id?: string
+          created_at?: string
+          expires_at?: string
+          id?: string
+          session_token?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "admin_sessions_admin_id_fkey"
+            columns: ["admin_id"]
+            isOneToOne: false
+            referencedRelation: "admin_users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      admin_users: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string
+          password_hash: string
+          role: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          password_hash: string
+          role?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          password_hash?: string
+          role?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       contact_messages: {
         Row: {
           budget: string | null
