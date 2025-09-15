@@ -23,7 +23,7 @@ const ServicesSection = () => {
         "Achievement Highlighting",
         "Professional Language & Tone"
       ],
-      price: "Starting at ₹2,500"
+      price: "₹499 Only"
     },
     {
       icon: Smartphone,
@@ -35,7 +35,7 @@ const ServicesSection = () => {
         "Mobile-First Approach",
         "Fast Loading & SEO Optimized"
       ],
-      price: "Starting at ₹15,000"
+      price: "₹499 Only"
     },
     {
       icon: Users,
@@ -47,7 +47,7 @@ const ServicesSection = () => {
         "Interview Preparation",
         "Industry Insights & Trends"
       ],
-      price: "Starting at ₹3,000"
+      price: "₹499 Only"
     }
   ];
 
