@@ -255,10 +255,11 @@ const ContactSection = () => {
                       className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
                     >
                       <option value="">Select budget range</option>
-                      <option value="2k-5k">₹2K - ₹5K</option>
-                      <option value="5k-15k">₹5K - ₹15K</option>
-                      <option value="15k-30k">₹15K - ₹30K</option>
-                      <option value="30k+">₹30K+</option>
+                      <option value="499-only">₹499 Only</option>
+                      <option value="500-1000">₹500 - ₹1,000</option>
+                      <option value="1000-2500">₹1,000 - ₹2,500</option>
+                      <option value="2500-5000">₹2,500 - ₹5,000</option>
+                      <option value="5000+">₹5,000+</option>
                     </select>
                   </div>
 

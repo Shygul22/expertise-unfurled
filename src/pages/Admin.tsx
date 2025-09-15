@@ -3,7 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mail, Phone, MapPin, Calendar, User, Building, DollarSign, FileText } from "lucide-react";
+import { ArrowLeft, Mail, Phone, MapPin, Calendar, User, Building, DollarSign, FileText, Settings } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 
@@ -24,8 +24,15 @@ const Admin = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Check if admin is logged in
+    const adminToken = localStorage.getItem('adminToken');
+    if (!adminToken) {
+      navigate('/admin-login');
+      return;
+    }
+    
     fetchMessages();
-  }, []);
+  }, [navigate]);
 
   const fetchMessages = async () => {
     try {
@@ -65,14 +72,22 @@ const Admin = () => {
         <div className="flex items-center gap-4 mb-8">
           <Button
             variant="outline"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/admin-dashboard')}
             className="flex items-center gap-2"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Home
+            Back to Dashboard
           </Button>
-          <h1 className="text-3xl font-bold">Contact Messages Admin</h1>
-          <Badge variant="secondary" className="ml-auto">
+          <h1 className="text-3xl font-bold">Contact Messages (Legacy View)</h1>
+          <Button
+            variant="outline"
+            onClick={() => navigate('/admin-dashboard')}
+            className="ml-auto flex items-center gap-2"
+          >
+            <Settings className="h-4 w-4" />
+            Full Dashboard
+          </Button>
+          <Badge variant="secondary" className="">
             {messages.length} Total Messages
           </Badge>
         </div>
