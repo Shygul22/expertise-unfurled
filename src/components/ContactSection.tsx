@@ -96,8 +96,8 @@ const ContactSection = () => {
             Let's Work <span className="text-gradient">Together</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Get in touch and let's discuss how we can 
-            create something amazing together.
+            Ready to advance your career in web development? Get in touch to enroll in our comprehensive 
+            fullstack, frontend, or backend development courses with certification options.
           </p>
         </div>
 
@@ -107,8 +107,8 @@ const ContactSection = () => {
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you have a project in mind, need technical consultation, or just want to say hello, 
-                I'd love to hear from you. Let's start a conversation about your next big idea.
+                Whether you want to enroll in our development courses, need technical consultation, or have questions about 
+                our certification options, I'd love to hear from you. Let's start your learning journey today.
               </p>
             </div>
 
@@ -230,24 +230,24 @@ const ContactSection = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="projectType">Project Type</Label>
+                    <Label htmlFor="projectType">Course Type</Label>
                     <select 
                       id="projectType"
                       value={formData.projectType}
                       onChange={handleInputChange}
                       className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
                     >
-                      <option value="">Select service type</option>
-                      <option value="resume-writing">Resume Writing</option>
-                      <option value="portfolio-creation">Portfolio Creation</option>
-                      <option value="career-consultation">Career Consultation</option>
-                      <option value="combo-package">Combo Package</option>
-                      <option value="other">Other</option>
+                      <option value="">Select course type</option>
+                      <option value="fullstack-development">Fullstack Development</option>
+                      <option value="frontend-development">Frontend Development</option>
+                      <option value="backend-development">Backend Development</option>
+                      <option value="all-courses">All Three Courses</option>
+                      <option value="consultation">Course Consultation</option>
                     </select>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="budget">Project Budget</Label>
+                    <Label htmlFor="budget">Course Budget</Label>
                     <select 
                       id="budget"
                       value={formData.budget}
@@ -255,21 +255,21 @@ const ContactSection = () => {
                       className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
                     >
                       <option value="">Select budget range</option>
-                      <option value="499-only">₹499 Only</option>
-                      <option value="500-1000">₹500 - ₹1,000</option>
-                      <option value="1000-2500">₹1,000 - ₹2,500</option>
-                      <option value="2500-5000">₹2,500 - ₹5,000</option>
-                      <option value="5000+">₹5,000+</option>
+                      <option value="800-ecertificate">₹800 (with E-Certificate - Free)</option>
+                      <option value="1050-normal-certificate">₹1,050 (with Normal Certificate - ₹250 extra)</option>
+                      <option value="2400-all-courses-ecertificate">₹2,400 (All 3 Courses + E-Certificates)</option>
+                      <option value="3150-all-courses-normal-certificate">₹3,150 (All 3 Courses + Normal Certificates)</option>
+                      <option value="custom">Custom Package</option>
                     </select>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Project Details *</Label>
+                    <Label htmlFor="message">Course Details *</Label>
                     <Textarea 
                       id="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your project, timeline, and any specific requirements..."
+                      placeholder="Tell me about your learning goals, preferred course(s), certificate preference (E-Certificate is free, Normal Certificate costs ₹250 extra), and any specific requirements..."
                       rows={5}
                       className="resize-none focus:ring-primary focus:border-primary"
                       required
