@@ -15,39 +15,42 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code2,
-      title: "Resume Writing",
-      description: "Professional resume writing services that highlight your skills and achievements effectively.",
+      title: "Fullstack Development",
+      description: "Complete fullstack development course covering both frontend and backend technologies with hands-on projects.",
       features: [
-        "ATS-Optimized Format",
-        "Industry-Specific Keywords", 
-        "Achievement Highlighting",
-        "Professional Language & Tone"
+        "Frontend & Backend Integration",
+        "Modern Tech Stack (React, Node.js)",
+        "Database Management & APIs",
+        "E-Certificate or Normal Certificate"
       ],
-      price: "₹499 Only"
+      price: "₹800",
+      originalPrice: "₹1500"
     },
     {
       icon: Smartphone,
-      title: "Portfolio Creation",
-      description: "Custom-designed portfolio websites that showcase your work and personal brand professionally.",
+      title: "Frontend Development",
+      description: "Comprehensive frontend development course focusing on modern UI/UX design and responsive web applications.",
       features: [
-        "Modern Responsive Design",
-        "Custom Branding & Colors",
-        "Mobile-First Approach",
-        "Fast Loading & SEO Optimized"
+        "React & Modern JavaScript",
+        "Responsive Design Principles",
+        "Component-Based Architecture",
+        "E-Certificate or Normal Certificate"
       ],
-      price: "₹499 Only"
+      price: "₹800",
+      originalPrice: "₹1500"
     },
     {
-      icon: Users,
-      title: "Career Consultation",
-      description: "Strategic career guidance and personalized coaching to help you achieve your professional goals.",
+      icon: Database,
+      title: "Backend Development",
+      description: "Master server-side development with databases, APIs, authentication, and deployment strategies.",
       features: [
-        "One-on-One Consultation",
-        "Career Path Planning",
-        "Interview Preparation",
-        "Industry Insights & Trends"
+        "Server Architecture & APIs",
+        "Database Design & Management",
+        "Authentication & Security",
+        "E-Certificate or Normal Certificate"
       ],
-      price: "₹499 Only"
+      price: "₹800",
+      originalPrice: "₹1500"
     }
   ];
 
@@ -60,8 +63,8 @@ const ServicesSection = () => {
             Our <span className="text-gradient">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Complete portfolio creation services to help you stand out and attract the right opportunities.
-            From design to deployment, we handle everything for you.
+            Master fullstack, frontend, and backend development with our comprehensive courses.
+            Get certified and advance your career in web development.
           </p>
         </div>
 
@@ -95,7 +98,10 @@ const ServicesSection = () => {
                   {/* Pricing */}
                   <div className="border-t pt-4">
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-primary">{service.price}</span>
+                      <div className="flex flex-col">
+                        <span className="font-semibold text-primary">{service.price}</span>
+                        <span className="text-xs text-muted-foreground line-through">MRP: {service.originalPrice}</span>
+                      </div>
                       <Button variant="ghost" size="sm" className="group">
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -111,19 +117,19 @@ const ServicesSection = () => {
         {/* CTA Section */}
         <div className="text-center bg-gradient-subtle rounded-2xl p-12 animate-fade-up">
           <h3 className="text-3xl font-bold mb-4">
-            Ready to Build Your Portfolio?
+            Ready to Start Your Development Journey?
           </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's create a stunning portfolio that showcases your work and opens new doors.
-            Book a free consultation to discuss your vision.
+            Join our comprehensive development courses and get certified. 
+            Start building your career in fullstack, frontend, or backend development.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="group">
-              Start Your Portfolio
+              Enroll Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline-primary" size="lg">
-              View Package Details
+              View Course Details
             </Button>
           </div>
         </div>
