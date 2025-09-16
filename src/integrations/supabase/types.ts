@@ -115,9 +115,11 @@ export type Database = {
           created_at: string
           email: string
           id: string
+          mobile_number: string | null
           name: string
           project_details: string | null
           project_type: string | null
+          whatsapp_number: string | null
         }
         Insert: {
           budget?: string | null
@@ -125,9 +127,11 @@ export type Database = {
           created_at?: string
           email: string
           id?: string
+          mobile_number?: string | null
           name: string
           project_details?: string | null
           project_type?: string | null
+          whatsapp_number?: string | null
         }
         Update: {
           budget?: string | null
@@ -135,9 +139,11 @@ export type Database = {
           created_at?: string
           email?: string
           id?: string
+          mobile_number?: string | null
           name?: string
           project_details?: string | null
           project_type?: string | null
+          whatsapp_number?: string | null
         }
         Relationships: []
       }

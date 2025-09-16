@@ -19,12 +19,10 @@ import {
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    company: '',
-    projectType: '',
-    budget: '',
+    mobileNumber: '',
+    whatsappNumber: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +39,7 @@ const ContactSection = () => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+    if (!formData.name || !formData.email || !formData.mobileNumber || !formData.message) {
       toast.error("Please fill in all required fields");
       return;
     }
@@ -52,11 +50,10 @@ const ContactSection = () => {
       const { error } = await supabase
         .from('contact_messages')
         .insert({
-          name: `${formData.firstName} ${formData.lastName}`,
+          name: formData.name,
           email: formData.email,
-          company: formData.company || null,
-          project_type: formData.projectType || null,
-          budget: formData.budget || null,
+          mobile_number: formData.mobileNumber,
+          whatsapp_number: formData.whatsappNumber,
           project_details: formData.message
         });
 
@@ -70,12 +67,10 @@ const ContactSection = () => {
       
       // Reset form
       setFormData({
-        firstName: '',
-        lastName: '',
+        name: '',
         email: '',
-        company: '',
-        projectType: '',
-        budget: '',
+        mobileNumber: '',
+        whatsappNumber: '',
         message: ''
       });
 
@@ -211,97 +206,64 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name *</Label>
-                      <Input 
-                        id="firstName" 
-                        value={formData.firstName}
-                        onChange={handleInputChange}
-                        placeholder="John" 
-                        className="h-11 focus:ring-primary focus:border-primary"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name *</Label>
-                      <Input 
-                        id="lastName" 
-                        value={formData.lastName}
-                        onChange={handleInputChange}
-                        placeholder="Doe" 
-                        className="h-11 focus:ring-primary focus:border-primary"
-                        required
-                      />
-                    </div>
-                  </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
+                    <Label htmlFor="name">Full Name *</Label>
                     <Input 
-                      id="email" 
-                      type="email" 
-                      value={formData.email}
+                      id="name" 
+                      value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="john@example.com" 
+                      placeholder="Enter your full name" 
                       className="h-11 focus:ring-primary focus:border-primary"
                       required
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="company">Company (Optional)</Label>
+                    <Label htmlFor="email">Gmail *</Label>
                     <Input 
-                      id="company" 
-                      value={formData.company}
+                      id="email" 
+                      type="email" 
+                      value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="Your Company" 
+                      placeholder="your.email@gmail.com" 
+                      className="h-11 focus:ring-primary focus:border-primary"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="mobileNumber">Mobile Number *</Label>
+                    <Input 
+                      id="mobileNumber" 
+                      type="tel"
+                      value={formData.mobileNumber}
+                      onChange={handleInputChange}
+                      placeholder="+91 9876543210" 
+                      className="h-11 focus:ring-primary focus:border-primary"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="whatsappNumber">WhatsApp Number</Label>
+                    <Input 
+                      id="whatsappNumber" 
+                      type="tel"
+                      value={formData.whatsappNumber}
+                      onChange={handleInputChange}
+                      placeholder="+91 9876543210 (if different from mobile)" 
                       className="h-11 focus:ring-primary focus:border-primary"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="projectType">Course Type</Label>
-                    <select 
-                      id="projectType"
-                      value={formData.projectType}
-                      onChange={handleInputChange}
-                      className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                    >
-                      <option value="">Select course type</option>
-                      <option value="fullstack-development">Fullstack Development</option>
-                      <option value="frontend-development">Frontend Development</option>
-                      <option value="backend-development">Backend Development</option>
-                      <option value="all-courses">All Three Courses</option>
-                      <option value="consultation">Course Consultation</option>
-                    </select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="budget">Course Budget</Label>
-                    <select 
-                      id="budget"
-                      value={formData.budget}
-                      onChange={handleInputChange}
-                      className="w-full h-11 px-3 py-2 border border-input bg-background rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                    >
-                      <option value="">Select budget range</option>
-                      <option value="800-ecertificate">₹800 (with E-Certificate - Free)</option>
-                      <option value="1050-normal-certificate">₹1,050 (with Normal Certificate - ₹250 extra)</option>
-                      <option value="2400-all-courses-ecertificate">₹2,400 (All 3 Courses + E-Certificates)</option>
-                      <option value="3150-all-courses-normal-certificate">₹3,150 (All 3 Courses + Normal Certificates)</option>
-                      <option value="custom">Custom Package</option>
-                    </select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Learning Goals & Requirements *</Label>
+                    <Label htmlFor="message">Basic Question *</Label>
                     <Textarea 
                       id="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your learning goals, preferred course schedule, certificate preference (E-Certificate is free, Normal Certificate costs ₹250 extra), any prior experience, and specific topics you'd like to focus on..."
-                      rows={5}
+                      placeholder="Which course are you interested in? Do you have any prior programming experience? Any specific questions about the courses?"
+                      rows={4}
                       className="resize-none focus:ring-primary focus:border-primary"
                       required
                     />
