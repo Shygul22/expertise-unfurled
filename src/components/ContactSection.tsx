@@ -93,11 +93,11 @@ const ContactSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Let's Work <span className="text-gradient">Together</span>
+            Enroll in <span className="text-gradient">Online Classes</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to advance your career in web development? Get in touch to enroll in our comprehensive 
-            fullstack, frontend, or backend development courses with certification options.
+            Master web development with our comprehensive online courses. Learn Fullstack, Frontend, 
+            or Backend development from industry experts with hands-on projects and certification.
           </p>
         </div>
 
@@ -105,11 +105,38 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="animate-fade-up">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
+              <h3 className="text-2xl font-bold mb-4">Start Your Learning Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you want to enroll in our development courses, need technical consultation, or have questions about 
-                our certification options, I'd love to hear from you. Let's start your learning journey today.
+                Join our online development courses and get certified in your chosen field. 
+                Expert-led classes with practical projects and lifetime access to course materials.
               </p>
+              
+              {/* Course Highlights */}
+              <div className="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                <h4 className="font-semibold text-primary mb-3">Course Highlights:</h4>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Live online classes with expert instructors</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Hands-on projects and real-world applications</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Lifetime access to course materials</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Industry-relevant curriculum and latest technologies</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Certificate upon completion (E-Certificate free, Normal Certificate +₹250)</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Contact Methods */}
@@ -149,8 +176,8 @@ const ContactSection = () => {
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium">Schedule a Call</p>
-                  <p className="text-sm text-muted-foreground">Book a free 30-min consultation</p>
+                  <p className="font-medium">Course Inquiry</p>
+                  <p className="text-sm text-muted-foreground">Get details about our online classes</p>
                 </div>
               </div>
             </div>
@@ -176,7 +203,11 @@ const ContactSection = () => {
           <div className="animate-fade-up">
             <Card className="border-0 shadow-large bg-card/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl">Send a Message</CardTitle>
+                <CardTitle className="text-2xl">Enroll Now</CardTitle>
+                <p className="text-sm text-muted-foreground mt-2">
+                  <span className="font-semibold text-primary">Special Offer:</span> Course Fee ₹800 only 
+                  <span className="line-through text-muted-foreground ml-2">MRP: ₹1500</span>
+                </p>
               </CardHeader>
               <CardContent className="space-y-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -264,12 +295,12 @@ const ContactSection = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Course Details *</Label>
+                    <Label htmlFor="message">Learning Goals & Requirements *</Label>
                     <Textarea 
                       id="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your learning goals, preferred course(s), certificate preference (E-Certificate is free, Normal Certificate costs ₹250 extra), and any specific requirements..."
+                      placeholder="Tell me about your learning goals, preferred course schedule, certificate preference (E-Certificate is free, Normal Certificate costs ₹250 extra), any prior experience, and specific topics you'd like to focus on..."
                       rows={5}
                       className="resize-none focus:ring-primary focus:border-primary"
                       required
@@ -297,9 +328,9 @@ const ContactSection = () => {
                   </Button>
                 </form>
 
-                <div className="text-center pt-4 border-t">
+                  <div className="text-center pt-4 border-t">
                   <p className="text-sm text-muted-foreground">
-                    I'll get back to you within 24 hours
+                    Start your development career today! We'll respond within 24 hours.
                   </p>
                 </div>
               </CardContent>
