@@ -40,10 +40,6 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+91 9488742416</span>
               </div>
-              <div className="flex items-center gap-3 text-sm">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span>Kovilpalayam, Coimbatore</span>
-              </div>
             </div>
 
             {/* Social Links */}

@@ -156,15 +156,6 @@ const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted/70 transition-colors">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-sm text-muted-foreground">Kovilpalayam, Coimbatore</p>
-                </div>
-              </div>
 
               <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted/70 transition-colors">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">

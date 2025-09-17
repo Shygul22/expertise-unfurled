@@ -152,7 +152,6 @@ const TermsOfService = () => {
                   <div className="bg-muted/50 p-6 rounded-lg">
                     <p><strong>Email:</strong> zypher@zenjourney.in</p>
                     <p><strong>Phone:</strong> +91 9488742416</p>
-                    <p><strong>Address:</strong> Kovilpalayam, Coimbatore</p>
                   </div>
                 </div>
               </div>
