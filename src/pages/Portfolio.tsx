@@ -1,19 +1,17 @@
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import PortfolioSection from "@/components/PortfolioSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import ServicesSection from "@/components/ServicesSection";
+import CourseHeroSection from "@/components/CourseHeroSection";
+import CourseFeaturesSection from "@/components/CourseFeaturesSection";
+import EnrollmentStatsSection from "@/components/EnrollmentStatsSection";
+import CourseOffersSection from "@/components/CourseOffersSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Portfolio = () => {
   return (
     <main className="min-h-screen">
-      <HeroSection />
-      <AboutSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <ServicesSection />
+      <CourseHeroSection />
+      <CourseFeaturesSection />
+      <EnrollmentStatsSection />
+      <CourseOffersSection />
       <ContactSection />
       <Footer />
     </main>
