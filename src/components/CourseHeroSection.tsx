@@ -2,6 +2,24 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Users, Award } from "lucide-react";
 
 const CourseHeroSection = () => {
+  const handleEnrollNow = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+      // Pre-fill form with course enrollment data
+      setTimeout(() => {
+        // Dispatch a custom event with enrollment data
+        window.dispatchEvent(new CustomEvent('enrollmentClicked', {
+          detail: {
+            projectType: 'Course Enrollment - Zypher Fullstack Development',
+            budget: '₹800 (Special Launch Price)',
+            message: 'I am interested in enrolling for the Zypher Fullstack Development course (₹800). Please provide enrollment details and payment instructions.'
+          }
+        }));
+      }, 100);
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden">
       {/* Background Pattern */}
@@ -72,6 +90,7 @@ const CourseHeroSection = () => {
               variant="hero" 
               size="hero"
               className="group text-lg px-8 py-4"
+              onClick={handleEnrollNow}
             >
               Enroll Now
               <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />

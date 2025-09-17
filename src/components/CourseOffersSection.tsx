@@ -4,6 +4,24 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Star, Clock, Download, Award } from "lucide-react";
 
 const CourseOffersSection = () => {
+  const handleEnrollNow = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+      // Pre-fill form with course enrollment data
+      setTimeout(() => {
+        // Dispatch a custom event with enrollment data
+        window.dispatchEvent(new CustomEvent('enrollmentClicked', {
+          detail: {
+            projectType: 'Course Enrollment - Zypher Fullstack Development',
+            budget: '₹800 (Special Launch Price)',
+            message: 'I am interested in enrolling for the Zypher Fullstack Development course (₹800). Please provide enrollment details and payment instructions.'
+          }
+        }));
+      }, 100);
+    }
+  };
+
   const highlights = [
     "Frontend: React, HTML, CSS, JavaScript mastery",
     "Backend: Node.js, Express, Database design",
@@ -96,7 +114,7 @@ const CourseOffersSection = () => {
                     <span>Offer valid for limited time only</span>
                   </div>
 
-                  <Button size="lg" className="w-full text-lg py-6" variant="hero">
+                  <Button size="lg" className="w-full text-lg py-6" variant="hero" onClick={handleEnrollNow}>
                     <Download className="w-5 h-5 mr-2" />
                     Enroll Now - ₹800
                   </Button>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -23,9 +23,27 @@ const ContactSection = () => {
     email: '',
     mobileNumber: '',
     whatsappNumber: '',
-    message: ''
+    message: '',
+    projectType: '',
+    budget: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Listen for enrollment events
+  useEffect(() => {
+    const handleEnrollmentClick = (event: any) => {
+      const { projectType, budget, message } = event.detail;
+      setFormData(prev => ({
+        ...prev,
+        projectType,
+        budget,
+        message
+      }));
+    };
+
+    window.addEventListener('enrollmentClicked', handleEnrollmentClick);
+    return () => window.removeEventListener('enrollmentClicked', handleEnrollmentClick);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { id, value } = e.target;
@@ -54,7 +72,9 @@ const ContactSection = () => {
           email: formData.email,
           mobile_number: formData.mobileNumber,
           whatsapp_number: formData.whatsappNumber,
-          project_details: formData.message
+          project_details: formData.message,
+          project_type: formData.projectType || null,
+          budget: formData.budget || null
         });
 
       if (error) {
@@ -71,7 +91,9 @@ const ContactSection = () => {
         email: '',
         mobileNumber: '',
         whatsappNumber: '',
-        message: ''
+        message: '',
+        projectType: '',
+        budget: ''
       });
 
     } catch (error) {
@@ -83,7 +105,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-background">
+    <section id="contact-section" className="section-padding bg-background">
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
