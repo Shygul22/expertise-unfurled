@@ -140,7 +140,6 @@ const AdminDashboard = () => {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold">ZenJourney Admin</h1>
-              <p className="text-muted-foreground">CRM & Contact Management</p>
             </div>
             <div className="flex items-center gap-4">
               <Badge variant="secondary">

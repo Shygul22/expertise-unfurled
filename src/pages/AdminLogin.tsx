@@ -140,13 +140,6 @@ const AdminLogin = () => {
               </Button>
             </form>
 
-            <div className="mt-6 text-center">
-              <p className="text-sm text-muted-foreground">
-                Demo Credentials:<br />
-                Email: admin@zenjourney.in<br />
-                Password: admin123
-              </p>
-            </div>
           </CardContent>
         </Card>
       </div>
