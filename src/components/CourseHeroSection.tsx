@@ -101,8 +101,7 @@ const CourseHeroSection = () => {
               size="hero"
               className="group text-lg px-8 py-4"
             >
-              <Play className="mr-2 h-6 w-6 group-hover:scale-110 transition-transform" />
-              View Demo
+              Syllabus
             </Button>
           </div>
         </div>
