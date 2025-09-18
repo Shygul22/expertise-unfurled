@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Users, Award } from "lucide-react";
+import { useState } from "react";
+import SyllabusModal from "./SyllabusModal";
 
 const CourseHeroSection = () => {
+  const [syllabusOpen, setSyllabusOpen] = useState(false);
+
   const handleEnrollNow = () => {
     const contactSection = document.getElementById('contact-section');
     if (contactSection) {
@@ -100,6 +104,7 @@ const CourseHeroSection = () => {
               variant="outline-primary" 
               size="hero"
               className="group text-lg px-8 py-4"
+              onClick={() => setSyllabusOpen(true)}
             >
               Syllabus
             </Button>
@@ -113,6 +118,9 @@ const CourseHeroSection = () => {
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+
+      {/* Syllabus Modal */}
+      <SyllabusModal open={syllabusOpen} onOpenChange={setSyllabusOpen} />
     </section>
   );
 };
