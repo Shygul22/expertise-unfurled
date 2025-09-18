@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Users, Award } from "lucide-react";
+import { ArrowRight, Users, Award } from "lucide-react";
+import { Play } from "lucide-react";
 import { useState } from "react";
 import SyllabusModal from "./SyllabusModal";
 
