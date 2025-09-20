@@ -41,7 +41,16 @@ const CourseFeaturesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-background relative">
+      {/* Scroll Indicator - Positioned above Complete Learning Path */}
+      <div className="absolute top-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="flex flex-col items-center">
+          <div className="w-5 h-8 border border-primary/30 rounded-full flex justify-center bg-background/20 backdrop-blur-sm">
+            <div className="w-0.5 h-2 bg-primary rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+      
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
