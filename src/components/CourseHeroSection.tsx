@@ -3,6 +3,7 @@ import { ArrowRight, Users, Award } from "lucide-react";
 import { Play } from "lucide-react";
 import { useState } from "react";
 import SyllabusModal from "./SyllabusModal";
+import { ThemeToggle } from "./ThemeToggle";
 
 const CourseHeroSection = () => {
   const [syllabusOpen, setSyllabusOpen] = useState(false);
@@ -27,6 +28,11 @@ const CourseHeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden">
+      {/* Theme Toggle */}
+      <div className="absolute top-4 right-4 z-20">
+        <ThemeToggle />
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
@@ -113,10 +119,13 @@ const CourseHeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+      {/* Mouse Animation - Centered and pointing to Enroll Now */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="flex flex-col items-center space-y-2">
+          <div className="w-6 h-10 border-2 border-primary/40 rounded-full flex justify-center relative">
+            <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+          </div>
+          <div className="text-xs text-muted-foreground font-medium">Scroll to Enroll</div>
         </div>
       </div>
 
